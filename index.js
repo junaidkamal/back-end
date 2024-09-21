@@ -11,6 +11,9 @@ const connectDB = require("./db");
 
 connectDB();
 
+app.get('/', (req, res)=> {
+    res.send('Hello World!')
+})
 
 // middlewares
 app.use(express.json());
