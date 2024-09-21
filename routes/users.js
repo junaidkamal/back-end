@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const { User, validate } = require("../models/user");
 
 
-router.get('/user', (req, res) => {
+router.get('/', (req, res) => {
 	res.send("hello")
 })
 
@@ -30,3 +30,5 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
+
+
